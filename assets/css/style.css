@@ -304,3 +304,6 @@ img{max-width:100%;display:block}
   font-size:clamp(1.35rem,2.6vw,2.05rem);line-height:1.25;color:var(--dalia-cl);
   margin-top:.9rem;max-width:24ch;letter-spacing:.005em}
 .hero-foto .declama+.lead{margin-top:1.6rem}
+
+.hero-foto .declama em{font-style:italic}
+.hero-foto .declama+.lead{margin-top:1.3rem}
