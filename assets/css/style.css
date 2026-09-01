@@ -262,3 +262,40 @@ img{max-width:100%;display:block}
 .placar .num b{font-size:2.2rem}
 .placar .num span{font-size:.85rem}
 @media(max-width:420px){.placar{grid-template-columns:1fr}}
+
+/* retrato emoldurado */
+.retrato{background:var(--papel-2);border:1px solid var(--linha);border-radius:2px;
+  aspect-ratio:4/5;overflow:hidden;position:relative}
+.retrato img{width:100%;height:100%;object-fit:cover;object-position:center}
+.retrato.wide{aspect-ratio:3/2}
+.escuro .retrato{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.14)}
+.legenda{margin-top:.7rem;font-size:.79rem;color:var(--mist);line-height:1.5}
+.escuro .legenda{color:#8A90A8}
+
+/* homenagem */
+.homenagem{display:grid;grid-template-columns:minmax(180px,260px) 1fr;gap:clamp(1.4rem,3vw,2.6rem);
+  align-items:start;padding-block:clamp(2rem,4vw,3rem);border-top:1px solid var(--linha)}
+.escuro .homenagem{border-top-color:rgba(255,255,255,.14)}
+@media(max-width:700px){.homenagem{grid-template-columns:1fr}.homenagem .retrato{max-width:260px}}
+.homenagem h3{font-family:var(--serif);font-size:clamp(1.6rem,3vw,2.1rem);font-weight:500;
+  line-height:1.12;color:var(--noite)}
+.escuro .homenagem h3{color:#F7F5F0}
+.homenagem .papel{font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--dalia);font-weight:600;margin-bottom:.5rem;display:block}
+.escuro .homenagem .papel{color:var(--dalia-cl)}
+
+/* linha do tempo */
+.tempo{display:grid;gap:0;border-left:1.5px solid var(--linha);margin-left:.4rem}
+.escuro .tempo{border-left-color:rgba(255,255,255,.18)}
+.tempo li{list-style:none;position:relative;padding:0 0 1.5rem 1.6rem}
+.tempo li::before{content:"";position:absolute;left:-5px;top:.45em;width:9px;height:9px;
+  border-radius:50% 0 50% 50%;background:var(--dalia);transform:rotate(45deg)}
+.tempo b{font-family:var(--serif);font-size:1.15rem;color:var(--noite);display:block;font-weight:500}
+.escuro .tempo b{color:#F7F5F0}
+.tempo span{color:var(--texto-2);font-size:.95rem;display:block;margin-top:.2rem;max-width:62ch}
+.escuro .tempo span{color:#B0B5C8}
+.tempo em{font-style:normal;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mist)}
+
+.verso small{display:block;font-family:var(--sans);font-style:normal;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--mist);margin-top:1rem}
+.escuro .verso small{color:#7E85A0}
+.homenagem .retrato svg{width:64px;height:64px;opacity:.5}
