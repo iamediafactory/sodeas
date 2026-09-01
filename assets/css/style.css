@@ -299,3 +299,8 @@ img{max-width:100%;display:block}
 .verso small{display:block;font-family:var(--sans);font-style:normal;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--mist);margin-top:1rem}
 .escuro .verso small{color:#7E85A0}
 .homenagem .retrato svg{width:64px;height:64px;opacity:.5}
+
+.hero-foto .declama{font-family:var(--serif);font-style:italic;font-weight:300;
+  font-size:clamp(1.35rem,2.6vw,2.05rem);line-height:1.25;color:var(--dalia-cl);
+  margin-top:.9rem;max-width:24ch;letter-spacing:.005em}
+.hero-foto .declama+.lead{margin-top:1.6rem}
